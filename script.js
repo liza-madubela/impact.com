@@ -3,7 +3,7 @@
     const params = new URLSearchParams(window.location.search);
     const key = params.get('key');
     const value = params.get('value');
-
+    console.log('params:', params);
     if (key && value) {
         window.dataLayer = window.dataLayer || [];
         let data = {};
